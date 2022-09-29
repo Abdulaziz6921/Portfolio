@@ -39,6 +39,11 @@ nav {
   border: 2px solid red;
   margin: auto;
   display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   justify-content: space-between;
   align-items: center;
   animation: nav_load 400ms;
@@ -99,19 +104,21 @@ ul.main_links > li > a:hover {
   border: 3px solid green;
 }
 
-.three_bar > i {
+.fa-bars {
   padding: 0 0 10px 8px;
   font-size: 33px;
 }
 
 .right_slider {
   display: none;
-  width: 45%;
+  width: 50%;
   height: 100vh;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 2;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
   /* border: var(--border2); */
   background: var(--secondary);
   transform: translateX(700px);
@@ -167,26 +174,34 @@ ul.main_links > li > a:hover {
 
 .li_collection > li {
   width: 95%;
-  height: 45px;
+  height: 65px;
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: var(--border); */
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  /* margin-bottom: 5px; */
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
   background: var(--secondary);
   /* border: 2px solid #6e6e6e; */
 }
+.li_collection > li:hover {
+  background: var(--primary);
+}
+.li_collection > li:hover > a {
+  color: var(--secondary);
+  background: var(--primary);
+}
 
+.li_collection > li:hover > a > i {
+  background-color: var(--primary);
+}
 .li_collection > li > a {
-  font-size: 14px;
+  font-size: 18px;
   color: #fff;
   text-decoration: none;
   display: flex;
   /* border: 2px solid red; */
-  width: 100px;
+  width: 150px;
   background-color: var(--secondary);
 }
 
@@ -261,6 +276,10 @@ ul.main_links > li > a:hover {
 }
 
 @media screen and (max-width: 700px) {
+  ::-webkit-scrollbar-track {
+    margin-block: 0px;
+    border-radius: 5px;
+  }
   nav {
     position: relative;
     width: 95%;
@@ -339,13 +358,26 @@ ul.main_links > li > a:hover {
   font-size: 30px;
   margin: 10px 0 20px 0;
 }
-.intro > p {
+.info_text {
   color: var(--white);
   font-size: 20px;
   font-weight: 600;
   padding-right: 90px;
   line-height: 22px;
 }
+
+.scroll_down {
+  color: var(--white);
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 45px;
+}
+
+.arrow_down {
+  color: var(--white);
+  font-size: 35px;
+}
+
 /* Contact me button Starts */
 .intro > button {
   width: 220px;
