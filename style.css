@@ -16,6 +16,9 @@
   /* overflow-x: hidden; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -686,7 +689,7 @@ ul.main_links > li > a:hover {
   font-weight: 500;
   font-size: 17px;
   opacity: 0;
-  animation: showText 0.5s 1s linear forwards;
+  animation: showText 1s 1s linear forwards;
 }
 @keyframes showText {
   100% {
@@ -698,7 +701,7 @@ ul.main_links > li > a:hover {
   width: 100%;
   background: #f0f0f0;
   position: relative;
-  transform: scaleX(0);
+  transform: scaleX(1);
   transform-origin: left;
   border-radius: 10px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
@@ -785,7 +788,7 @@ ul.main_links > li > a:hover {
   font-size: 12px;
   border-radius: 3px;
   opacity: 0;
-  animation: showText2 0.5s 1.5s linear forwards;
+  animation: showText2 1s 1.5s linear forwards;
 }
 @keyframes showText2 {
   100% {
