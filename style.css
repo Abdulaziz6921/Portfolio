@@ -318,7 +318,7 @@ ul.main_links > li > a:hover {
 
 .home {
   width: 90%;
-  height: 680px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -491,7 +491,7 @@ ul.main_links > li > a:hover {
 @media screen and (max-width: 1300px) {
   .home {
     width: 90%;
-    height: 600px;
+    height: 680px;
     display: flex;
     align-items: center;
     justify-content: center;
