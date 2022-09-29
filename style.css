@@ -107,6 +107,7 @@ ul.main_links > li > a:hover {
 .fa-bars {
   padding: 0 0 10px 8px;
   font-size: 33px;
+  color: var(--white);
 }
 
 .right_slider {
